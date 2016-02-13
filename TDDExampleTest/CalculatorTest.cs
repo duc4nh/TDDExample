@@ -9,16 +9,30 @@ namespace TDDExampleTest
     {
         [TestMethod]
         [ExpectedException(typeof(IndexOutOfRangeException))]
-        public void Test_Max_Number_Gt_1000()
+        public void Test_SoDauLonHon1000()
         {
             Calculator.Calculate(1001, 3, "+");
         }
 
         [TestMethod]
         [ExpectedException(typeof(IndexOutOfRangeException))]
-        public void Test_Min_Number_Lt_N1000()
+        public void Test_SoSauLonHon1000()
+        {
+            Calculator.Calculate(101, 1001, "+");
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(IndexOutOfRangeException))]
+        public void Test_SoDauNhoHonAm1000()
         {
             Calculator.Calculate(-1001, 3, "+");
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(IndexOutOfRangeException))]
+        public void Test_SoSauNhoHonAm1000()
+        {
+            Calculator.Calculate(1, -1003, "+");
         }
     }
 }
