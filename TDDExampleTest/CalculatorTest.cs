@@ -9,30 +9,21 @@ namespace TDDExampleTest
     {
         [TestMethod]
         [ExpectedException(typeof(IndexOutOfRangeException))]
-        public void Test_SoDauLonHon1000()
+        public void Test_InputInRange()
         {
-            Calculator.Calculate(1001, 3, "+");
-        }
+            // Arrange
+            int validInput = 500;
+            int tooLargeInput = 1001;
+            int tooSmallInput = -1001;
 
-        [TestMethod]
-        [ExpectedException(typeof(IndexOutOfRangeException))]
-        public void Test_SoSauLonHon1000()
-        {
-            Calculator.Calculate(101, 1001, "+");
-        }
+            // Act
+            Calculator.Calculate(tooLargeInput, validInput, "+");
+            Calculator.Calculate(validInput, tooLargeInput, "+");
+            Calculator.Calculate(validInput, tooSmallInput, "+");
+            Calculator.Calculate(tooSmallInput, validInput, "+");
 
-        [TestMethod]
-        [ExpectedException(typeof(IndexOutOfRangeException))]
-        public void Test_SoDauNhoHonAm1000()
-        {
-            Calculator.Calculate(-1001, 3, "+");
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(IndexOutOfRangeException))]
-        public void Test_SoSauNhoHonAm1000()
-        {
-            Calculator.Calculate(1, -1003, "+");
+            // Assert
+            // "Nothing to do here"
         }
     }
 }
