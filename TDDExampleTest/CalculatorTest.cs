@@ -49,5 +49,22 @@ namespace TDDExampleTest
             // Assert
             // "Nothing to do here"
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Test_PhepCong()
+        {
+            // Arrange
+            int input1 = 1;
+            int input2 = 2;
+            int expectedResult = 3;
+            String method = "+";
+
+            // Act
+            int actualResult = Calculator.Calculate(input1, input2, method);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
