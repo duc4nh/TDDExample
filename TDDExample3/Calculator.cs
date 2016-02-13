@@ -14,7 +14,13 @@ namespace TDDExample
             {
                 throw new IndexOutOfRangeException("Input phai nam trong khoang [-1000,1000]");
             }
-            
+
+            String[] validMethods = {"+", "-", "*", "/"};
+            if (Array.IndexOf(validMethods, n) == -1)
+            {
+                throw new ArgumentException("Phep tinh phai la +, -, *, /");
+            }
+
             return 0;
         }
     }
