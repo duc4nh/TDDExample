@@ -2,3 +2,4 @@ C:\Users\Duc\Documents\Visual Studio 2012\Projects\TDDExample\TDDExample3\bin\De
 C:\Users\Duc\Documents\Visual Studio 2012\Projects\TDDExample\TDDExample3\bin\Debug\TDDExample3.pdb
 C:\Users\Duc\Documents\Visual Studio 2012\Projects\TDDExample\TDDExample3\obj\Debug\TDDExample3.dll
 C:\Users\Duc\Documents\Visual Studio 2012\Projects\TDDExample\TDDExample3\obj\Debug\TDDExample3.pdb
+C:\Users\Duc\Documents\Visual Studio 2012\Projects\TDDExample\TDDExample3\obj\Debug\TDDExample.csprojResolveAssemblyReference.cache
