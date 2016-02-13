@@ -1,0 +1,7 @@
+c:\users\duc\documents\visual studio 2012\Projects\TDDExample\TDDExampleTest\bin\Debug\TDDExampleTest.dll
+c:\users\duc\documents\visual studio 2012\Projects\TDDExample\TDDExampleTest\bin\Debug\TDDExampleTest.pdb
+c:\users\duc\documents\visual studio 2012\Projects\TDDExample\TDDExampleTest\obj\Debug\TDDExampleTest.dll
+c:\users\duc\documents\visual studio 2012\Projects\TDDExample\TDDExampleTest\obj\Debug\TDDExampleTest.pdb
+C:\Users\Duc\Documents\Visual Studio 2012\Projects\TDDExample\TDDExampleTest\bin\Debug\TDDExample3.dll
+C:\Users\Duc\Documents\Visual Studio 2012\Projects\TDDExample\TDDExampleTest\bin\Debug\TDDExample3.pdb
+C:\Users\Duc\Documents\Visual Studio 2012\Projects\TDDExample\TDDExampleTest\obj\Debug\TDDExampleTest.csprojResolveAssemblyReference.cache
