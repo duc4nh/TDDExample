@@ -8,7 +8,7 @@ namespace TDDExample
 {
     public class Calculator
     {
-        public static int Calculate(int a, int b, String n)
+        public static double Calculate(int a, int b, String n)
         {
             if (a > 1000 || a < -1000 || b > 1000 || b < -1000)
             {

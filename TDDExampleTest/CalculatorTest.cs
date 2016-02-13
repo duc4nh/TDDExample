@@ -51,7 +51,6 @@ namespace TDDExampleTest
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void Test_PhepCong()
         {
             // Arrange
@@ -61,7 +60,71 @@ namespace TDDExampleTest
             String method = "+";
 
             // Act
-            int actualResult = Calculator.Calculate(input1, input2, method);
+            double actualResult = Calculator.Calculate(input1, input2, method);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TestMethod]
+        public void Test_PhepNhan()
+        {
+            // Arrange
+            int input1 = 1;
+            int input2 = 2;
+            int expectedResult = 2;
+            String method = "*";
+
+            // Act
+            double actualResult = Calculator.Calculate(input1, input2, method);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Test_PhepChia_KhongDuocChiaCho0()
+        {
+            // Arrange
+            int input1 = 1;
+            int input2 = 0;
+            String method = "/";
+
+            // Act
+            Calculator.Calculate(input1, input2, method);
+
+            // Assert
+            // "Nothing to do here"
+        }
+
+        [TestMethod]
+        public void Test_PhepChia()
+        {
+            // Arrange
+            int input1 = 1;
+            int input2 = 2;
+            double expectedResult = 0.5;
+            String method = "/";
+
+            // Act
+            double actualResult = Calculator.Calculate(input1, input2, method);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TestMethod]
+        public void Test_PhepTru()
+        {
+            // Arrange
+            int input1 = 1;
+            int input2 = 2;
+            int expectedResult = -1;
+            String method = "-";
+
+            // Act
+            double actualResult = Calculator.Calculate(input1, input2, method);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
