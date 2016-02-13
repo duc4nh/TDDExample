@@ -15,13 +15,32 @@ namespace TDDExample
                 throw new IndexOutOfRangeException("Input phai nam trong khoang [-1000,1000]");
             }
 
-            String[] validMethods = {"+", "-", "*", "/"};
+            String[] validMethods = { "+", "-", "*", "/" };
             if (Array.IndexOf(validMethods, n) == -1)
             {
                 throw new ArgumentException("Phep tinh phai la +, -, *, /");
             }
 
-            return 0;
+            switch (n)
+            {
+                case "+":
+                    return a + b;
+                case "-":
+                    return a - b;
+                case "*":
+                    return a * b;
+                case "/":
+                    if (b == 0)
+                    {
+                        throw new ArgumentException("Khong the chia cho 0");
+                    }
+                    else
+                    {
+                        return (double)a / b;
+                    }
+                default:
+                    return 0;
+            }
         }
     }
 }
